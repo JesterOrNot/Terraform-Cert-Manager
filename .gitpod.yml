@@ -1,0 +1,13 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - init: terraform init
+vscode:
+  extensions:
+    - ms-kubernetes-tools.vscode-kubernetes-tools@1.2.0:8b6GpNcAG8ZOxmYhaPtKpA==
+    - hashicorp.terraform@2.1.1:QEP7gdWtMuY+j8RZ5OLDkA==
+github:
+  prebuilds:
+    branches: true           # Branches are the main location for development and therefore should be prebuilt
+    addBadge: true           # So the badge is right there
+    addLabel: ready-to-code  # Let people know a PR is prebuilt
